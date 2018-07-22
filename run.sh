@@ -10,11 +10,12 @@ brew=(
   python
   vim\ --with-override-system-vi
   wget\ --with-iri
+  node
+  swiftlint
   cask
 )
 
 cask=(
-  1password
   alfred
   flux
   google-chrome
@@ -61,6 +62,9 @@ for i in "${cask[@]}"; do
   brew cask install $i
 done
 #brew link openssl --force
+
+echo **** install iOS sim ****
+npm install -g ios-sim
 
 echo ****Install Oh My ZSH****
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
