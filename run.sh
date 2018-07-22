@@ -12,6 +12,7 @@ brew=(
   wget\ --with-iri
   node
   swiftlint
+  cocoapods
   cask
 )
 
