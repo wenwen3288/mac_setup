@@ -36,6 +36,13 @@ cask=(
   shiftit
 )
 
+extra_cask=(
+  postman
+  charles
+  visual-studio-code
+  zeplin
+  neteasemusic
+)
 
 ################ CONFIGUTATION END ########################
 
