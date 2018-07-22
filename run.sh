@@ -2,16 +2,15 @@
 
 ################CONFIGUTATION START########################
 brew=(
-  awscli 
+  awscli
   cheat
-  gnu-sed --with-default-names
+  gnu-sed\ --with-default-names
   gpg
   openssl
   python
-  vim --with-override-system-vi
-  wget --with-iri
+  vim\ --with-override-system-vi
+  wget\ --with-iri
   cask
-  git-open
 )
 
 cask=(
@@ -53,8 +52,14 @@ echo ****Updating brew start****
 brew update
 
 echo **** install ${brew[@]} ****
-brew **** install ${brew[@]} ****
-brew cask install ${cask[@]}
+for i in "${brew[@]}"; do
+  brew install $i
+done
+
+echo **** install ${cask[@]} ****
+for i in "${cask[@]}"; do
+  brew cask install $i
+done
 #brew link openssl --force
 
 echo ****Install Oh My ZSH****
