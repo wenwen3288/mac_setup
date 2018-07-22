@@ -81,6 +81,13 @@ echo ****changing theme ****
 echo **** see https://github.com/agnoster/agnoster-zsh-theme****
 sed -i 's/ZSH_THEME="[a-zA-Z]*"/ZSH_THEME="agnoster"/g' zsh
 
+echo **** adding alias ****
+
+echo "alias git-log=\"git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)'\"" >> ~/.zshrc
+echo "alias git-log-all=\"git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset) —all\'\"" >> ~/.zshrc
+echo "alias git-delete-merged=\"git fetch && git remote prune origin && git branch --merged | egrep -v '(^\*|master|dev)' | xargs git branch -d\"" >> ~/.zshrc
+source ~/.zshrc
+
 echo ****Install Font ****
 echo ***User Roboto Thin****
 # clone
