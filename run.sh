@@ -68,13 +68,6 @@ done
 echo **** install iOS sim ****
 npm install -g ios-sim
 
-echo ****Install Oh My ZSH****
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
-echo ****changing theme ****
-echo **** see https://github.com/agnoster/agnoster-zsh-theme****
-sed -i 's/ZSH_THEME="[a-zA-Z]*"/ZSH_THEME="agnoster"/g' zsh
-
 echo **** adding alias ****
 
 echo "alias git-log=\"git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)'\"" >> ~/.zshrc
