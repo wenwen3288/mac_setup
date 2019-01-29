@@ -106,14 +106,8 @@ echo ****install awscli finish****
 #Support bigger file size. default is 100k
 defaults write com.whomwah.quicklookstephen maxFileSize 1024000
 
-echo **** Disable sound on boot ****
-sudo nvram SystemAudioVolume=" "
-
 echo **** Disble time machine when new media inserted to the system ****
 sudo defaults write /Library/Preferences/com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
-
-echo **** Disable bouncing on dock ****
-defaults write com.apple.dock no-bouncing -bool false
 
 
 echo **** Show file extention ****
