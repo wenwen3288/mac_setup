@@ -20,16 +20,13 @@ cask=(
   alfred
   flux
   google-chrome
-  google-backup-and-sync  
-  iterm2
+  google-backup-and-sync
   java
-  nordvpn
   qlcolorcode
   qlimagesize
   qlmarkdown
   qlstephen
   quicklook-json
-  slack
   sublime-text
   virtualbox
   vlc
@@ -38,10 +35,7 @@ cask=(
 
 extra_cask=(
   postman
-  charles
   visual-studio-code
-  zeplin
-  neteasemusic
 )
 
 ################ CONFIGUTATION END ########################
