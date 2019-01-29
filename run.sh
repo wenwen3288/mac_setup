@@ -122,6 +122,8 @@ defaults write NSGlobalDomain KeyRepeat -int 1
 
 echo ****Change screenshot location****
 defaults write com.apple.screencapture location ~/Desktop/screenshots
+
+echo ****Show battery percent****
 defaults write com.apple.menuextra.battery ShowPercent YES
 
 
